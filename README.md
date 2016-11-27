@@ -40,3 +40,8 @@ It uses the XML format of the RSS feed because it has the "updated_at" field, in
 
 Download the project, build it with Xcode 8. Then you can archive it via Product > Archive, and export the archive as
 build products. Move the AppReviewsMailer.app file from the resulting folder into /usr/local.
+
+# Known Issues
+
+* It doesn't work well with Windows-based email clients. The issue is the console mail util doesn't add the encoding
+header to the mails sent.
