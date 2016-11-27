@@ -3,6 +3,8 @@ of an app over email.
 
 # Usage
 
+It should run on macOS version 10.9+.
+
 It's convinient to schedule its running in cron:
 
 ```
