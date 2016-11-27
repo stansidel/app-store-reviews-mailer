@@ -8,10 +8,6 @@
 
 import Foundation
 
-//let recipients = ["stansidel@yandex-team.ru"]
-//let appId = "387272416"
-//let langId = "ru"
-
 let arguments = CommandLine.arguments
 func argument(for option: String, in arguments: [String]) -> String? {
     guard let index = arguments.index(where: { $0 == "--\(option)"}) else { return nil }
@@ -44,22 +40,6 @@ guard let dir = FileManager.default.urls(for: .documentDirectory, in: .userDomai
         exit(2)
 }
 
-//let file = ".processed_reviews"
-//let path = dir.appendingPathComponent(file)
-//
-//var prevIds = [String]()
-//var prevIdsText = ""
-//
-//if (try? path.checkResourceIsReachable()) ?? false {
-//    do {
-//        prevIdsText = try String(contentsOf: path, encoding: String.Encoding.utf8)
-//        prevIds = prevIdsText.components(separatedBy: "\n")
-//    } catch let e {
-//        print("Unable to read from file \(file). Error: \(e.localizedDescription).")
-//        exit(3)
-//    }
-//}
-
 let dateFile = ".review_latest_date_\(appId)_\(langId)"
 let datePath = dir.appendingPathComponent(dateFile)
 let latestDateFormatter = DateFormatter()
@@ -86,12 +66,6 @@ reader.readReviews(after: latestDate) { (revs, err) in
     error = err
     completed = true
 }
-
-//reader.readReviews(except: prevIds) { (revs, err) in
-//    reviews = revs
-//    error = err
-//    completed = true
-//}
 
 var i = 1
 let max = 10
@@ -126,17 +100,5 @@ if let reviews = reviews, reviews.count > 0 {
             exit(2)
         }
     }
-    
-//    let ids = reviews.map { $0.id }.joined(separator: "\n")
-//
-//        //writing
-//        do {
-//            try (prevIdsText + "\n" + ids).write(to: path, atomically: false, encoding: String.Encoding.utf8)
-//        }
-//        catch {
-//            print("Unable to write to file")
-//            exit(2)
-//        }
-    
 }
 

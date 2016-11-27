@@ -83,7 +83,7 @@
             isEnabled = "YES">
          </CommandLineArgument>
          <CommandLineArgument
-            argument = "stansidel@yandex-team.ru, sidelnikov.stanislav@gmail.com"
+            argument = "stansidel@yandex-team.ru"
             isEnabled = "YES">
          </CommandLineArgument>
       </CommandLineArguments>

@@ -33,6 +33,7 @@
 		2C4E9D5A1DD59B38001362D0 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		2C4E9D611DD59B52001362D0 /* Review.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
 		2C4E9D631DD59C66001362D0 /* ReviewsReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewsReader.swift; sourceTree = "<group>"; };
+		2CBBBC0A1DEAAF120060BE7F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +50,7 @@
 		2C4E9D4E1DD59B38001362D0 = {
 			isa = PBXGroup;
 			children = (
+				2CBBBC0A1DEAAF120060BE7F /* README.md */,
 				2C4E9D591DD59B38001362D0 /* AppReviewsMailer */,
 				2C4E9D581DD59B38001362D0 /* Products */,
 			);
